@@ -1,0 +1,39 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) exit;
+
+get_header();
+?>
+
+    <div id="content" class="col-full">
+
+        <div class="section-wrapper">
+
+    	<?php woo_main_before(); ?>
+
+		<section id="main" class="col-left">
+
+            <div class="page">
+
+				<header>
+                	<h1><?php _e( 'Error 404 - Page not found!', 'woothemes' ); ?></h1>
+                </header>
+                <section class="entry">
+                	<p><?php _e( 'The page you trying to reach does not exist, or has been moved. Please use the menus or the search box to find what you are looking for.', 'woothemes' ); ?></p>
+
+                   
+
+                </section>
+
+            </div><!-- /.page -->
+
+        </section><!-- /#main -->
+
+        <?php woo_main_after(); ?>
+
+        <?php get_sidebar(); ?>
+
+    </div><!-- /.section-wrapper -->
+
+    </div><!-- /#content -->
+
+<?php get_footer(); ?>
